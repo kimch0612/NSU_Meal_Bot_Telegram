@@ -63,7 +63,7 @@ for divs in div_lunch.find_all("div", class_="card card-menu"):
 for divs in div_dinner.find_all("div", class_="card card-menu"):
     chaeumDinner = chaeumDinner + divs.find("div", class_="card-text").text + "\n"
 
-filechaeumBreakfast= open("/home/pi/nsu_serverDB/chaeum_lunch", 'w')
+filechaeumBreakfast = open("/home/pi/nsu_serverDB/chaeum_breakfast", 'w')
 filechaeumBreakfast.write(chaeumBreakfast)
 filechaeumBreakfast.close()
 filechaeumlunch = open("/home/pi/nsu_serverDB/chaeum_lunch", 'w')
